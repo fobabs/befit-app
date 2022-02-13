@@ -11,9 +11,10 @@ class WelcomePage1 extends StatelessWidget {
       title: 'Welcome!',
       text1: 'Explore the all new way to build',
       text2: 'your fitness & find the',
-      text3: 'perfect fit for you.',
+      text3: 'perfect fit for you',
       iconImage: AssetImage('images/Breadcrumb1.png'),
       navigateTo: '',
+      buttonAction: '',
     );
   }
 }
