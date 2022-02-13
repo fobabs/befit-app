@@ -9,9 +9,9 @@ class HomePage2 extends StatelessWidget {
     return const Template(
       image: AssetImage('images/fitness2.jpg'),
       title: 'Welcome!',
-      text1: 'Explore the all new way to build',
-      text2: 'your fitness & find the',
-      text3: 'perfect fit for you',
+      text1: 'Feel Free to adjust your workout',
+      text2: '& diet settings according to',
+      text3: 'your comfort',
       iconImage: AssetImage('images/Breadcrumb1.png'),
       navigateTo: "",
       buttonAction: "/thirdpage",

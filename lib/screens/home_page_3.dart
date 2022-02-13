@@ -7,11 +7,11 @@ class HomePage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Template(
-      image: AssetImage('images/fitness2.jpg'),
-      title: 'Welcome!',
-      text1: 'Explore the all new way to build',
-      text2: 'your fitness & find the',
-      text3: 'perfect fit for you',
+      image: AssetImage('images/fitness3.jpg'),
+      title: "Let's Go!",
+      text1: 'Get the new fitness upadates',
+      text2: 'everyday, and improve',
+      text3: 'performance',
       iconImage: AssetImage('images/Breadcrumb1.png'),
       navigateTo: "",
       buttonAction: "/firstpage",
