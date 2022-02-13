@@ -26,8 +26,9 @@ class Template extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-        color: Colors.black54,
-        fontWeight: FontWeight.w500,
+        fontSize: 16,
+        color: Colors.black87,
+        fontWeight: FontWeight.w400,
       ),
     );
   }
@@ -56,7 +57,7 @@ class Template extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white70,
                   fontWeight: FontWeight.bold,
-                  fontSize: 30,
+                  fontSize: 36,
                   letterSpacing: 0.9,
                 ),
               ),
@@ -82,13 +83,13 @@ class Template extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                      fontSize: 46,
+                      fontSize: 48,
                       fontWeight: FontWeight.bold,
-                      letterSpacing: 0.9,
+                      letterSpacing: -2,
                     ),
                   ),
                   const SizedBox(
-                    height: 8,
+                    height: 16,
                   ),
                   _text(text1),
                   const SizedBox(
@@ -109,7 +110,7 @@ class Template extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: 72,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -142,14 +143,8 @@ class Template extends StatelessWidget {
                           Navigator.of(context).pushNamed(buttonAction);
                         },
                         child: const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Padding(
-                            padding: EdgeInsets.only(left: 8.0),
-                            child: Padding(
-                              padding: EdgeInsets.only(right: 8.0),
-                              child: Text('NEXT'),
-                            ),
-                          ),
+                          padding: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                          child: Text('NEXT'),
                         ),
                       ),
                     ],
