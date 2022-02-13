@@ -7,7 +7,7 @@ class HomePage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Template(
-      image: AssetImage('images/fitness2.jpg'),
+      image: AssetImage('images/fitness3.jpg'),
       title: 'Welcome!',
       text1: 'Explore the all new way to build',
       text2: 'your fitness & find the',
