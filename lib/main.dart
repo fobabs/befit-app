@@ -1,4 +1,6 @@
 import 'package:befit_app/screens/home_page_1.dart';
+import 'package:befit_app/screens/home_page_2.dart';
+import 'package:befit_app/screens/home_page_3.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage1(),
+    return MaterialApp(
+      routes: {
+        "/firstpage": (context) => const HomePage1(),
+        "/secondpage": (context) => const HomePage2(),
+        "/thirdpage": (context) => const HomePage3(),
+      },
+      home: const HomePage3(),
     );
   }
 }
