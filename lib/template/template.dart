@@ -41,21 +41,8 @@ class Template extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
                 image: image,
-              ),
-            ),
-          ),
-          const SafeArea(
-            child: Padding(
-              padding: EdgeInsets.all(10.0),
-              child: Text(
-                'BeFit',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  letterSpacing: 0.9,
-                ),
               ),
             ),
           ),
