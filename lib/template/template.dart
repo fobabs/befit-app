@@ -8,6 +8,7 @@ class Template extends StatelessWidget {
   final String text3;
   final AssetImage iconImage;
   final String navigateTo;
+  final String buttonAction;
 
   const Template({
     Key? key,
@@ -18,6 +19,7 @@ class Template extends StatelessWidget {
     required this.text3,
     required this.iconImage,
     required this.navigateTo,
+    required this.buttonAction,
   }) : super(key: key);
 
   Widget _text(String text) {
@@ -48,12 +50,13 @@ class Template extends StatelessWidget {
           ),
           const SafeArea(
             child: Padding(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(16.0),
               child: Text(
                 'BeFit',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
+                  color: Colors.white70,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
                   letterSpacing: 0.9,
                 ),
               ),
@@ -67,8 +70,8 @@ class Template extends StatelessWidget {
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(35),
-                  topRight: Radius.circular(35),
+                  topLeft: Radius.circular(50),
+                  topRight: Radius.circular(50),
                 ),
               ),
               padding: const EdgeInsets.fromLTRB(20, 40, 20, 20),
@@ -79,8 +82,8 @@ class Template extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 46,
+                      fontWeight: FontWeight.bold,
                       letterSpacing: 0.9,
                     ),
                   ),
@@ -119,7 +122,9 @@ class Template extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed("");
+                        },
                         child: const Text('Skip'),
                       ),
                       ElevatedButton(
@@ -133,7 +138,7 @@ class Template extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed(navigateTo);
+                          Navigator.of(context).pushNamed(buttonAction);
                         },
                         child: const Text('NEXT'),
                       ),
