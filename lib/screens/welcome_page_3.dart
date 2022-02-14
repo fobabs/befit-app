@@ -7,13 +7,13 @@ class WelcomePage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Template(
-      image: AssetImage('images/Homescreen2.png'),
+      image: AssetImage('images/Homescreen3.png'),
       title: 'Customize',
       text1: 'This is screen three',
       text2: '& created by github.com/pogakuofie',
       text3: 'dont mind the image.',
-      iconImage: AssetImage('images/Breadcrumb2.png'),
-      buttonAction: '/screen3',
+      iconImage: AssetImage('images/Breadcrumb3.png'),
+      buttonAction: '/screen1',
     );
   }
 }
