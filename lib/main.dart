@@ -1,4 +1,5 @@
 import 'package:befit_app/screens/welcome_page_1.dart';
+import 'package:befit_app/screens/welcome_page_2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: WelcomePage1(),
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/screen2': (context) => const WelcomePage2(),
+      },
+      home: const WelcomePage1(),
     );
   }
 }
