@@ -27,8 +27,8 @@ class Template extends StatelessWidget {
       text,
       style: const TextStyle(
         fontSize: 16,
-        color: Colors.black87,
-        fontWeight: FontWeight.w400,
+        color: Colors.black54,
+        fontWeight: FontWeight.w500,
       ),
     );
   }
@@ -61,7 +61,7 @@ class Template extends StatelessWidget {
                   topRight: Radius.circular(50),
                 ),
               ),
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+              padding: const EdgeInsets.fromLTRB(20, 40, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -69,9 +69,9 @@ class Template extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                      fontSize: 48,
+                      fontSize: 35,
                       fontWeight: FontWeight.bold,
-                      letterSpacing: -2,
+                      letterSpacing: 0.8,
                     ),
                   ),
                   const SizedBox(
@@ -87,7 +87,7 @@ class Template extends StatelessWidget {
                   ),
                   _text(text3),
                   const SizedBox(
-                    height: 40,
+                    height: 30,
                   ),
                   SizedBox(
                     width: 40,
@@ -96,7 +96,7 @@ class Template extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 72,
+                    height: 40,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -107,7 +107,7 @@ class Template extends StatelessWidget {
                           primary: Colors.black38,
                           textStyle: const TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 12,
+                            fontSize: 14,
                           ),
                         ),
                         onPressed: () {
@@ -129,7 +129,8 @@ class Template extends StatelessWidget {
                           Navigator.of(context).pushNamed(buttonAction);
                         },
                         child: const Padding(
-                          padding: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                          padding:
+                              EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                           child: Text('NEXT'),
                         ),
                       ),
