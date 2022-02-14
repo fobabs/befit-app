@@ -7,7 +7,6 @@ class Template extends StatelessWidget {
   final String text2;
   final String text3;
   final AssetImage iconImage;
-  final String navigateTo;
   final String buttonAction;
 
   const Template({
@@ -18,7 +17,6 @@ class Template extends StatelessWidget {
     required this.text2,
     required this.text3,
     required this.iconImage,
-    required this.navigateTo,
     required this.buttonAction,
   }) : super(key: key);
 
@@ -111,7 +109,7 @@ class Template extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed("");
+                          null;
                         },
                         child: const Text('Skip'),
                       ),
