@@ -13,7 +13,6 @@ class WelcomePage2 extends StatelessWidget {
       text2: '& diet settings according to',
       text3: 'your comfort',
       iconImage: AssetImage('images/Breadcrumb2.png'),
-      navigateTo: '',
       buttonAction: '',
     );
   }

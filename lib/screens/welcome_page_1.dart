@@ -13,8 +13,7 @@ class WelcomePage1 extends StatelessWidget {
       text2: 'your fitness & find the',
       text3: 'perfect fit for you',
       iconImage: AssetImage('images/Breadcrumb1.png'),
-      navigateTo: '',
-      buttonAction: '',
+      buttonAction: '/screen2',
     );
   }
 }
